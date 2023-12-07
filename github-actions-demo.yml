@@ -1,0 +1,18 @@
+名稱： GitHub 行動 演示
+運行名稱： ${{ github.actor工具 }} 是 測試 出 GitHub 行動 🚀
+在： [推動]
+工作：
+  Explore-GitHub-操作：
+    運行： ubuntu最新版本
+    步驟：
+      - 運行： 回聲 "該作業由${{github.event_name}} 事件”。
+      - 運行： 回聲 "🐧此作業現在正在${uner.os} 服務器由GitHub託管！”
+      - 運行： 回聲 "🔎您的分支機構的名稱是${{ github.ref }} 妳的倉庫是${{ github.repository }}."
+      - 名稱： 檢查 出 儲存庫 代碼
+        用途： 操作/簽出@v4
+      - 運行： 回聲 💡 The${{ github.repository }} 存儲庫已克隆到運行程序。"
+      - 運行： 回聲 "🖥️工作流現在已準備好在運行器上測試代碼。"
+      - 名稱： 列表 檔案 在 的 儲存庫
+        運行： |
+ls${github.workspace}
+      - 運行： 回聲 "🍏此作業的狀態爲${{job.status}}."
